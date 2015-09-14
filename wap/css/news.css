@@ -1,0 +1,12 @@
+
+.search-box {
+	margin: 0 auto;
+	padding-bottom: 30px;	
+}
+.search {
+	display: inline-block !important;
+	vertical-align: middle;
+}
+.search-text-box {
+	width: 72%;
+}

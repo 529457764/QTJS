@@ -1,0 +1,13 @@
+/*service*/
+@media screen and (max-width: 670px){
+	.navsBar>.nav1>a>.nav1-title {
+		font-size: 1.1em;
+		padding-bottom: 10px; 
+	}
+}
+@media all and (orientation : landscape) and (min-width: 735px) {
+	.navsBar>.nav1>a>.nav1-title {
+		font-size: 1.1em;
+		padding-bottom: 10px; 
+	}
+}

@@ -1,0 +1,50 @@
+.detail-content {
+	background-color: #D5D5D5;
+	padding: 10px 0;
+}
+.detail-content .dialog {
+	width: 80%;
+	/*padding: 10px 5px;*/
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+
+}
+.detail-content .dialog-header,
+.detail-content .dialog-content {
+	padding: 5px 5px;
+}
+.detail-content .question {
+	background-color: #FFF9E7;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.detail-content .response {
+	background-color: #E8F2FF;
+	float: right;
+	margin-right: 10px;
+}
+.detail-content .dialog .name {
+	color: #F00;
+	font-size: 1.4em;
+	padding-bottom: 5px;
+}
+.detail-content .dialog .time {
+	font-size: 1em;
+}
+.detail-content .dialog-content {
+	font-size: 1.2em;
+	background: #fff;
+	border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-o-border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-o-border-bottom-right-radius: 10px;
+}

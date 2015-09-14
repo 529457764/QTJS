@@ -1,0 +1,25 @@
+.list-icon {
+	font-size: 1em;
+	vertical-align: bottom;
+	padding-right: 10px;
+}
+.headerBar {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FB8423), to(#E73C16));
+	background: -moz-linear-gradient(top, #FB8423, #E73C16);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FB8423', endColorstr='#E73C16', GradientType='0');
+	color: #ffffff;
+	text-shadow: none;
+}
+	
+.footerBar li a {
+	font-size: 0.5em !important;
+	height: 20px;
+	line-height: 25px;
+}
+
+.footerBar li a {
+	background-color: #E73C16 !important;
+}
+.footerBar li a.ui-btn-active {
+	background-color: #FB8423 !important;
+}

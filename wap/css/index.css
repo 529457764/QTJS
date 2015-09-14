@@ -1,0 +1,214 @@
+/*header*/
+.header {
+	height: 5em !important;
+	background-color: #ffffff !important;
+	border: none;
+	background-image: url(../images/bg.png);
+}
+.header-left {
+	position: absolute;
+	width: 800px;
+	/*height: 80px;*/
+	overflow: hidden;
+	text-align: center;
+	padding-top: 10px;
+}
+.header-left .logo {
+	width: 250px;
+	max-height: 4em;
+}
+
+/*main*/
+.navBar-home {
+	max-width: 1340px;
+	position: relative; 
+	overflow: hidden;
+	padding-bottom: 0.5%;
+  	padding-top: 0.5%;
+	margin: 0 auto;
+	background-color: #ffffff !important;
+}
+@media screen and (max-width: 1000px) {
+  div.navBar-home {
+    padding-left:0.5%;
+    padding-right:0.5%;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1001px) {
+  div.navBar-home {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.navBar-home .nav {
+	display: block;
+	float: left;
+  	margin: 0.5%;
+  	padding-bottom: 24%;
+  	position: relative;
+  	z-index: 11;
+  	text-align: center;
+  	transition: box-shadow 0.2s ease-in;
+  	/*border-radius: 10px;
+  	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;*/
+}
+.navBar-home .nav:hover{
+  	box-shadow: 2px 10px 20px 0px rgba(0, 0, 0, 0.5);
+ 	z-index: 12;
+}
+.navBar-home .nav1 {
+	background-color: #ec371c; 
+}
+.navBar-home .nav2 {
+	background-color: #18a2eb; 
+}
+.navBar-home .nav3 {
+	background-color: #ffb901; 
+}
+.navBar-home .nav4 {
+	background-color: #fb3d63; 
+}
+.navBar-home .nav5 {
+	background-color: #6db607; 
+}
+.navBar-home .nav6 {
+	background-color: #fa7331; 
+}
+.navBar-home .icon {
+	display: block;
+	height: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	color: #fff;
+}
+.navBar-home .nav .nav-title {
+	position: absolute;
+	bottom: 0px;
+	font-size: 1.4em;
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	font-weight: normal;
+	padding: 5px 0;
+	/*text-shadow: none;*/
+}
+@media screen and (min-width: 671px){
+  	.navBar-home .nav1 {
+    	width: 49%;
+  	}
+  	.navBar-home .nav2 {
+    	width: 24%;
+
+  	}
+  	.navBar-home .nav3 {
+    	width: 24%;
+  	}
+	.navBar-home .nav4 {
+		width: 24%;
+	}
+	.navBar-home .nav5 {
+	    width: 49%;
+	}
+	.navBar-home .nav6 {
+	    width: 24%;
+	}
+  	.header {
+  		height: 120px !important;
+  	}
+  	.header-left .logo {
+  		width: 400px;
+		max-height: 100px;
+  	}
+}
+@media screen and (max-width: 670px){
+	.header {
+		height: 130px;
+	}
+	.header-left .logo {
+		height: 100px;
+	}
+	.header-right {
+		font-size: 0.6em;
+		bottom: 5px;
+	}
+  	.navBar-home .nav1 {
+    	width: 49%;
+    	padding-bottom: 48.3%;
+  	}
+  	.navBar-home .nav2 {
+    	width: 24%;
+
+  	}
+  	.navBar-home .nav3 {
+    	width: 24%;
+  	}
+	.navBar-home .nav4 {
+		width: 49%;
+	}
+	.navBar-home .nav5 {
+	    width: 49%;
+	}
+	.navBar-home .nav6 {
+	    width: 49%;
+	}
+  	.navBar-home .nav span.nav-title {
+    	font-size: 1.5em;
+    	font-weight: normal;
+    	padding: 5px 0;
+  	}
+  	.navBar-home .icon {
+  		font-size: 6.5em;
+  	}
+  	.nav2 .icon, 
+  	.nav3 .icon,  
+  	.nav4 .icon,
+  	.nav5 .icon,
+  	.nav6 .icon {
+  		font-size: 2.5em;
+  	}
+  	.navBar-home .nav2 span.nav-title, 
+  	.navBar-home .nav3 span.nav-title {
+  		font-size: 1em;
+  	}
+  	.navBar-home .nav4 span.nav-title, 
+  	.navBar-home .nav5 span.nav-title,
+  	.navBar-home .nav6 span.nav-title {
+		font-size: 1.2em;
+  	}
+}
+
+@media all and (orientation : landscape){  /*手机横屏*/
+	.navBar-home .icon {
+  		font-size: 10em;
+  	}
+  	.nav2 .icon, 
+  	.nav3 .icon,  
+  	.nav4 .icon,
+  	.nav5 .icon,
+  	.nav6 .icon {
+  		font-size: 4em;
+  	}
+}
+@media all and (orientation : landscape) and (min-width: 735px) {
+	.navBar-home .icon {
+  		font-size: 6.5em;
+  	}
+}
+
+.footer {
+	background: #ffffff !important;
+	border:none;
+	padding: 10px 0;
+}
+.footer .ft-info {
+	font-size: 0.8em;
+	width: 100%;
+	text-align: center;
+}

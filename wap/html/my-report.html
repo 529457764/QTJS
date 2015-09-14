@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>我要报障</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../css/jquery-mobile/jquery-1.11.2.min.js"></script>
+	<script src="../css/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="../css/jquery-mobile/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+	<!-- my-report -->
+	<section data-role="page" data-title="我要报障" id="my-report">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/font.css">
+		<link rel="stylesheet" href="../css/basic.css">
+		<link rel="stylesheet" href="../css/input-error.css">
+		<header data-role="header" data-position="fixed" data-theme="a" role="banner" class="ui-header ui-bar-a ui-header-fixed slidedown headerBar">
+			<a href="#nav-panel-my-report" data-icon="bars" data-iconpos="notext">目录</a>
+			<a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">主页</a>
+			<h1 class="ui-title" role="heading" aria-level="1">我要报障</h1>
+		</header>
+		<div data-role="content" class="content">
+			<form id="form" action="my-report.html" method="POST" data-ajax="false" enctype="multipart/form-data">
+				<div data-role="fieldcontain">
+					<div class="row">
+						<label>上门地址:</label>
+						<input type="text" class="required" name="address" id="address" placeholder="例如：东裕路8号" data-clear-btn="true">
+					</div>
+					<div class="row">
+						<label>公司所在镇区:</label>
+						<select name="township" id="township">
+							<option value="1" selected>直属(城区)</option>
+							<option value="2">南区</option>
+							<option value="3">三乡</option>
+							<option value="4">坦洲</option>	        
+	  						<option value="5">板芙</option>	       
+	  						<option value="6">神湾</option>         
+	  						<option value="7">开发区</option>	       
+	  						<option value="8">南朗</option>	        
+	  						<option value="9">民众</option>	        
+	  						<option value="10">三角</option>
+	  						<option value="11">港口</option>
+	  						<option value="12">南头</option>	       
+	  						<option value="13">黄圃</option>           
+	  						<option value="14">阜沙</option>	        
+	  						<option value="15">大涌</option>	        
+	  						<option value="16">东凤</option>	        
+	  						<option value="17">东升</option>          
+	  						<option value="18">古镇</option>	       
+	  						<option value="19">横栏</option>	       
+	  						<option value="20">沙溪</option>	       
+	  						<option value="21">小榄</option>
+	  						<option value="22">北京</option>
+	  						<option value="23">深圳</option>	
+	  						<option value="24">东莞</option>	
+	  						<option value="25">湛江</option>	   
+	  						<option value="26">海南</option>	
+	  						<option value="27">厦门</option>	     
+	  						<option value="28">广州</option>	       
+	  						<option value="29">上海</option>	       
+	  						<option value="30">江门</option>	       
+	  						<option value="31">珠海</option>	       
+	  						<option value="32">杭州</option>	       
+	  						<option value="33">佛山</option>	       
+	  						<option value="34">台山</option>	       
+	  						<option value="35">茂名</option>	       
+	  						<option value="36">河源</option>
+						</select>
+					</div>
+					<div class="row">
+						<label>联系人:</label>
+						<input type="text" class="ch_en" name="name" id="name" placeholder="请输入您的姓名" data-clear-btn="true">
+					</div>
+					<div class="row">
+						<label>联系电话:</label>
+						<input type="text" class="requiredNum ismobile" name="phone" id="phone" placeholder="请输入您的电话号码" data-clear-btn="true">
+					</div>
+					<div class="row">
+						<legend>故障类型:</legend>
+				        <input type="radio" name="choice" id="choice-1" value="6" checked="checked">
+				        <label for="choice-1">财税安全专线</label>
+				        <input type="radio" name="choice" id="choice-2" value="5">
+				        <label for="choice-2">电脑操作系统</label>
+				        <input type="radio" name="choice" id="choice-3" value="4">
+				        <label for="choice-3">打印机</label>
+				        <input type="radio" name="choice" id="choice-4" value="3">
+				        <label for="choice-4">抵扣联信息采集软件（包括扫描仪及软件）</label>
+				        <input type="radio" name="choice" id="choice-5" value="2">
+				        <label for="choice-5">电子报税管理系统</label>
+				        <input type="radio" name="choice" id="choice-6" value="1">
+				        <label for="choice-6">防伪开票（包括金税卡、IC卡、读卡器）</label>
+				        <input type="radio" name="choice" id="choice-7" value="7">
+				        <label for="choice-7">其他</label>
+					</div>
+					<div class="row">
+						<label>问题详述:</label>
+						<textarea cols="40" rows="8" name="detail" id="detail"></textarea>
+					</div>
+					<div class="row">
+						<input type="submit" value="提交问题">
+						<a href="#success-msg" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" style="display: none;" id="success-btn">弹出窗口</a>
+					</div>
+				</div>
+			</form>
+			<div data-role="popup" id="success-msg" data-theme="c" class="ui-corner-all" data-transition="pop" data-overlay-theme="a">
+				<header data-role="header" data-theme="b" class="ul-corner-top">
+					<h1 class="longContent">消息</h1>
+				</header>
+				<div data-role="content" data-theme="a" class="ui-corner-bottom ui-content">
+					<p class="longContent">您的报障我们已经收到</p>
+					<a href="#" data-role="button" data-transition="flow" data-theme="b" id="report-ok" class="ok">确认</a>
+				</div>
+			</div>
+		</div>
+		<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel-my-report">
+			<ul data-role="listview" data-icon="false">
+				<li><a href="index.html"><i class="list-icon">&#xe600;</i>首页</a></li>
+				<li><a href="news.html"><i class="list-icon">&#xe602;</i>最新通知</a></li>
+				<li><a href="service.html"><i class="list-icon">&#xe60a;</i>服务中心</a></li>
+				<li><a href="product.html"><i class="list-icon">&#xe60e;</i>税控产品</a></li>
+				<li><a href="guideline.html"><i class="list-icon">&#xe60c;</i>操作指引查询</a></li>
+				<li><a href="consultation.html"><i class="list-icon">&#xe60b;</i>在线咨询</a></li>
+				<li><a href="report.html"><i class="list-icon">&#xe60d;</i>在线报障</a></li>
+			</ul>
+		</div>
+		<footer data-role="footer" data-position="fixed" data-theme="b" role="contentinfo" class="ui-footer ui-bar-a ui-footer-fixed slideup footerBar">
+			<div data-role="navbar" class="ui-navbar" role="navigation">
+				<ul>
+					<li class="ui-block-a longContent">
+						<a href="report.html" class="ui-btn ui-btn-icon-top ui-icon-clock longContent">历史报障</a>
+					</li>
+					<li class="ui-block-b longContent">
+						<a href="my-report.html" class="ui-btn ui-btn-active ui-btn-icon-top ui-icon-user longContent">我要报障</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/basic.js"></script>
+		<script src="../js/input-reg.js"></script>
+	</section>
+	
+</body>
+</html>

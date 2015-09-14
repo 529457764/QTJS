@@ -1,0 +1,36 @@
+.s-title {
+	color: #C1262C;
+	text-align: center;
+}
+.s-phone {
+	font-size: 1em;
+	color: #0271B9;
+	text-align: center;
+}
+.standard-row .row-left {
+	width: 35% !important;
+	text-align: left;
+}
+.standard-row .row-right {
+	width: 65% !important;
+	text-align: center;
+}
+.standard-row .row-item {
+	display: inline-block !important;
+	vertical-align: middle;
+}
+.s-addition {
+	font-size: 0.8em;
+	color: #C1262C;
+}
+.s-company {
+	padding-top: 20px;
+	font-size: 1.1em;
+	text-align: center;
+}
+.service-title {
+	font-size: 1.5em;
+}
+.service-list-title {
+	text-align: center;
+}

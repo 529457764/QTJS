@@ -1,0 +1,24 @@
+label.error {
+	color: red;
+	font-size: 0.8em;
+	font-weight: normal;
+	/*line-height: 1.4;*/
+	/*margin: 0.5em 0em 1em 0em;*/
+	padding-left: 0.7em;
+	width: 100%;
+	float: none;
+	display: block;
+}
+.success-msg {
+	max-width: 400px;
+}
+.success-msg header {
+	background-color: #FB8423;
+	color: #ffffff !important;
+	border-bottom: none;
+}
+.success-msg .ok {
+	background-color: #FB8423 !important;
+	color: #ffffff !important;
+	border: none;
+}

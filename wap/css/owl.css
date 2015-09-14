@@ -1,0 +1,13 @@
+#owl {
+	display: block;
+    width: 100%;
+    height: auto;
+}
+#owl img {
+	width: 100%;
+}
+.owl-controls {
+	position: absolute;
+	bottom: 0px !important;
+	right: 0;
+}

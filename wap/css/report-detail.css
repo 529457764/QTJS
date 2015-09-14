@@ -1,0 +1,15 @@
+.report-row {
+	border-bottom: #333 solid 1px;
+}
+.report-row .row-left {
+	width: 25% !important;
+	text-align: left;
+
+}
+.report-row .row-right {
+	width: 60% !important;
+}
+.report-row .row-item {
+	display: inline-block !important;
+	vertical-align: middle;
+}

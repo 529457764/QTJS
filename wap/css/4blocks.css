@@ -1,0 +1,39 @@
+.navsBar .nav1, .navsBar .nav1:hover, .navsBar .nav1:link {
+	background-color: #ec371c !important; 
+}
+.navsBar .nav2, .navsBar .nav2:hover, .navsBar .nav2:link  {
+	background-color: #18a2eb !important; 
+}
+.navsBar .nav3, .navsBar .nav3:hover, .navsBar .nav3:link  {
+	background-color: #ffb901 !important; 
+}
+.navsBar .nav4, .navsBar .nav4:hover, .navsBar .nav4:link  {
+	background-color: #fb3d63 !important; 
+}
+.navsBar .nav5, .navsBar .nav5:hover, .navsBar .nav5:link  {
+	background-color: #6db607 !important; 
+}
+.navsBar .nav6, .navsBar .nav6:hover, .navsBar .nav6:link {
+	background-color: #fa7331 !important; 
+}
+.navsBar .navs, .navsBar .navs:hover, .navsBar .navs:link {
+	color: #ffffff !important;
+	text-shadow: none;
+}
+.navsBar .icon {
+	font-size: 4em;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.navsBar .icon-title {
+	display: inline-block;
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+.navsBar .navs {
+	margin: 10px !important;
+	border-radius: 10px !important;
+  	-moz-border-radius: 10px !important; 
+	-webkit-border-radius: 10px !important;
+	-o-border-radius: 10px !important;
+}
